@@ -1,0 +1,45 @@
+context:
+  name: lazydocker
+  version: "0.24.1"
+  author: jesseduffield
+
+package:
+  name: ${{ name }}
+  version: ${{ version }}
+
+source:
+  url: https://github.com/${{ author }}/${{ name }}/archive/refs/tags/v${{ version }}.tar.gz
+  sha256: f54197d333a28e658d2eb4d9b22461ae73721ec9e4106ba23ed177fc530c21f4
+
+build:
+  number: 0
+
+requirements:
+  build:
+    - ${{ compiler('go-nocgo') }}
+    - go-licenses
+
+tests:
+  - script:
+    - ${{ name }} --version
+
+about:
+  homepage: https://github.com/${{ author }}/${{ name }}
+  repository: https://github.com/${{ author }}/${{ name }}
+  documentation: https://github.com/${{ author }}/${{ name }}/tree/v${{ version }}/docs
+  summary: "The lazier way to manage everything docker"
+  description: |
+    This tool simplifies and automates Docker resource management through an intuitive interface,
+    allowing developers to focus on their core tasks rather than remembering complex Docker commands.
+    It streamlines container lifecycle management, image building and optimization, and volume/network configuration with minimal effort required.
+    The tool supports customization through configuration files, making it easy to standardize development environments across teams.
+    With features like batch container operations and automation of common command sequences,
+    it effectively reduces the complexity of Docker operations while maintaining full compatibility with Docker's ecosystem and CI/CD pipelines.
+  license: MIT
+  license_file:
+    - LICENSE
+    - license-files/
+
+extra:
+  recipe-maintainers:
+    - eunos-1128
