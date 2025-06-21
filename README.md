@@ -11,21 +11,20 @@ Summary: The lazier way to manage everything docker
 
 Development: https://github.com/jesseduffield/lazydocker
 
-The lazier way to manage everything docker.
+Documentation: https://github.com/jesseduffield/lazydocker/tree/v0.24.1/docs
 
+This tool simplifies and automates Docker resource management through an intuitive interface,
+allowing developers to focus on their core tasks rather than remembering complex Docker commands.
+It streamlines container lifecycle management, image building and optimization, and volume/network configuration with minimal effort required.
+The tool supports customization through configuration files, making it easy to standardize development environments across teams.
+With features like batch container operations and automation of common command sequences,
+it effectively reduces the complexity of Docker operations while maintaining full compatibility with Docker's ecosystem and CI/CD pipelines.
 
 Current build status
 ====================
 
 
-<table><tr>
-    <td>Travis</td>
-    <td>
-      <a href="https://app.travis-ci.com/conda-forge/lazydocker-feedstock">
-        <img alt="linux" src="https://img.shields.io/travis/com/conda-forge/lazydocker-feedstock/main.svg?label=Linux">
-      </a>
-    </td>
-  </tr>
+<table>
     
   <tr>
     <td>Azure</td>
