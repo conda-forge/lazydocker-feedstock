@@ -11,7 +11,7 @@ Summary: The lazier way to manage everything docker
 
 Development: https://github.com/jesseduffield/lazydocker
 
-Documentation: https://github.com/jesseduffield/lazydocker/tree/v0.24.2/docs
+Documentation: https://github.com/jesseduffield/lazydocker/tree/v0.24.3/docs
 
 This tool simplifies and automates Docker resource management through an intuitive interface,
 allowing developers to focus on their core tasks rather than remembering complex Docker commands.
